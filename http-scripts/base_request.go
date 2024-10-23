@@ -18,7 +18,7 @@ func SendHttpRequest(url string, method string, requestBody []byte) ([]byte, err
 	}
 
 	// 设置 Bearer Token 在 Header 中
-	req.Header.Set("Authorization", "Bearer sk-ryfzhvnjbafqxrjqzirnwzgsilzpltdnmificatxembmoqua")
+	req.Header.Set("Authorization", "Bearer {{your-api-key}}")
 	req.Header.Set("Content-Type", "application/json") // 根据实际需要设置 Content-Type
 
 	client := &http.Client{
