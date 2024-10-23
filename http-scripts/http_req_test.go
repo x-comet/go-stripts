@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// todo 运行前去 consts 把 API_KEY 换成自己的 API_KEY
 func TestGetRandomStr(t *testing.T) {
 	url := "https://uat-api.siliconflow.cn/v1/chat/completions"
 	model := "Qwen/Qwen2.5-72B-Instruct"
@@ -13,6 +14,7 @@ func TestGetRandomStr(t *testing.T) {
 	fmt.Println(randomStr)
 }
 
+// todo 运行前去 consts 把 API_KEY 换成自己的 API_KEY
 func TestGenImage(t *testing.T) {
 	chatUrl := "https://uat-api.siliconflow.cn/v1/chat/completions"
 	imageUrl := "https://uat-api.siliconflow.cn/v1/images/generations"
